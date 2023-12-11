@@ -1,12 +1,26 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 export default function Navbar() {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  console.log(window.screenY);
+  const [scroll, setScroll] = useState(false);
+
+  const transitionNavbar = () => {
+    if (window.scrollY > 200) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", transitionNavbar);
+    return () => window.removeEventListener("scroll", transitionNavbar);
+  }, []);
+
   const navLinks = [
     {
       id: "#skills",
@@ -31,7 +45,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="w-full py-5 fixed text-gray">
+    <div className={`w-full py-5 fixed text-gray ${scroll && "bg-secondary"}`}>
       <div className="px-5 xl:px-0 max-w-7xl mx-auto flex items-center justify-between">
         <div>
           <Link
