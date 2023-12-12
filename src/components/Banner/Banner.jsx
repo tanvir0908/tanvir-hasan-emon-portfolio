@@ -37,7 +37,7 @@ export default function Banner() {
                 "https://drive.google.com/file/d/1hWJdBEnMuZ9VmjORX0yGf9T4eeWGv5nn/view?usp=sharing"
               }
               target="_blank"
-              className="bg-primary font-semibold text-base md:text-lg lg:text-xl px-5 py-2 rounded-xl text-secondary"
+              className="bg-primary mt font-semibold text-base md:text-lg lg:text-xl px-5 py-2 rounded-xl text-secondary"
             >
               Check Resume
             </Link>

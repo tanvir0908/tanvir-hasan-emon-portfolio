@@ -63,19 +63,21 @@ export default function Skills() {
   ];
 
   return (
-    <div id="skills" className="min-h-screen bg-secondary py-20">
+    <div id="skills" className="px-5 xl:px-0 bg-secondary py-20 text-gray">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl text-center font-semibold text-primary">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl text-center font-semibold text-primary">
           Skills
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-16">
           {skills1.map((skill, index) => (
             <div
               key={index}
-              className="flex shadow-md cursor-pointer shadow-primary black-gradient gap-5 items-center border-2 p-3 border-primary rounded-xl"
+              className="flex shadow-lg cursor-pointer border-2 border-primary shadow-primary gap-5 items-center p-5 md:p-3 rounded-xl"
             >
-              <img src={skill.image} className="w-16" alt="" />
-              <p className="font-semibold text-xl">{skill.name}</p>
+              <img src={skill.image} className="w-10 md:w-16" alt="" />
+              <p className="font-semibold text-base md:text-lg lg:text-xl">
+                {skill.name}
+              </p>
             </div>
           ))}
         </div>
