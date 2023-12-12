@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 
 export default function Banner() {
   return (
-    <div className="background min-h-screen flex justify-center items-center" id="banner">
+    <div
+      className="background min-h-screen flex justify-center items-center"
+      id="banner"
+    >
       <div className={"px-5 xl:px-0 max-w-7xl mx-auto text-center"}>
         <div className="space-y-10">
           <h1 className="text-gray font-bold text-3xl md:text-4xl lg:text-6xl">
@@ -28,7 +31,7 @@ export default function Banner() {
               <FaLinkedin />
             </Link>
           </p>
-          <p>
+          <p className="">
             <Link
               to={
                 "https://drive.google.com/file/d/1hWJdBEnMuZ9VmjORX0yGf9T4eeWGv5nn/view?usp=sharing"

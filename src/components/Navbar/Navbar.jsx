@@ -71,7 +71,7 @@ export default function Navbar() {
                   to={link.link}
                   spy={true}
                   smooth={true}
-                  offset={50}
+                  offset={-50}
                   duration={1000}
                 >
                   {link.name}
@@ -103,7 +103,7 @@ export default function Navbar() {
                       to={link.link}
                       spy={true}
                       smooth={true}
-                      offset={50}
+                      offset={-50}
                       duration={1000}
                     >
                       {link.name}
