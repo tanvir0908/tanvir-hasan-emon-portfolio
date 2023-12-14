@@ -29,10 +29,6 @@ export default function Navbar() {
       name: "Education",
     },
     {
-      link: "experience",
-      name: "Experience",
-    },
-    {
       link: "projects",
       name: "Projects",
     },

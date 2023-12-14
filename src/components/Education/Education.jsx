@@ -29,7 +29,7 @@ export default function Education() {
       id="education"
       className="w-full px-5 xl:px-0 bg-secondary py-20 min-h-screen text-gray"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl mb-20 text-center font-semibold text-primary">
           Education
         </h2>
@@ -42,7 +42,7 @@ export default function Education() {
             {education.map((institute, index) => (
               <div
                 key={index}
-                className="shadow-xl border-2 border-primary space-y-5 cursor-pointe shadow-primary p-5 md:p-10  rounded-xl"
+                className="shadow-xl border-2 hover:-translate-y-3 duration-1000 cursor-pointer border-primary space-y-5 cursor-pointe shadow-primary p-5 md:p-10  rounded-xl"
               >
                 <div className="flex items-center gap-5">
                   <IoSchool className="text-3xl md:text-4xl text-primary" />
@@ -50,20 +50,20 @@ export default function Education() {
                     {institute.degree}
                   </h2>
                 </div>
-                <div className="flex items-center gap-5">
-                  <FaUniversity className="text-3xl md:text-4xl text-primary" />
+                <div className="flex items-center gap-6">
+                  <FaUniversity className="text-2xl md:text-3xl text-primary" />
                   <p className="text-lg md:text-2xl font-bold flex-1">
                     {institute.institute}
                   </p>
                 </div>
-                <div className="flex items-center gap-5">
-                  <FaRegCalendarAlt className="text-3xl md:text-4xl text-primary" />
+                <div className="flex items-center gap-6">
+                  <FaRegCalendarAlt className="text-2xl md:text-3xl text-primary" />
                   <p className="text-base md:text-xl font-semibold flex-1">
                     {institute.timeline}
                   </p>
                 </div>
-                <div className="flex items-center gap-5">
-                  <FaBook className="text-3xl md:text-4xl text-primary" />
+                <div className="flex items-center gap-6">
+                  <FaBook className="text-2xl md:text-3xl text-primary" />
                   <p className="font-semibold text-base md:text-xl flex-1">
                     {institute.result}
                   </p>

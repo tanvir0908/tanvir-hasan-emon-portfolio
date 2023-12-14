@@ -5,6 +5,8 @@ import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export default function Banner() {
+  const resumeLink =
+    "https://drive.google.com/file/d/1hWJdBEnMuZ9VmjORX0yGf9T4eeWGv5nn/view?usp=sharing";
   return (
     <div
       className="background min-h-screen flex justify-center items-center"
@@ -33,9 +35,7 @@ export default function Banner() {
           </p>
           <p className="">
             <Link
-              to={
-                "https://drive.google.com/file/d/1hWJdBEnMuZ9VmjORX0yGf9T4eeWGv5nn/view?usp=sharing"
-              }
+              to={resumeLink}
               target="_blank"
               className="bg-primary mt font-semibold text-base md:text-lg lg:text-xl px-5 py-2 rounded-xl text-secondary"
             >
