@@ -1,4 +1,6 @@
 import Banner from "../components/Banner/Banner";
+import Certificates from "../components/Certificates/Certificates";
+import Contact from "../components/Contact/Contact";
 import Education from "../components/Education/Education";
 import Navbar from "../components/Navbar/Navbar";
 import Projects from "../components/Projects/Projects";
@@ -12,6 +14,8 @@ export default function Root() {
       <Skills />
       <Education />
       <Projects />
+      <Certificates />
+      <Contact />
     </div>
   );
 }

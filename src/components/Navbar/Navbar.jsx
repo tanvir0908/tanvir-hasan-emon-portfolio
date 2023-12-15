@@ -33,6 +33,10 @@ export default function Navbar() {
       name: "Projects",
     },
     {
+      link: "certificates",
+      name: "Certificates",
+    },
+    {
       link: "contact",
       name: "Contact",
     },

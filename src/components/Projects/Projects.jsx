@@ -59,7 +59,7 @@ manage the products of their cart.`,
         <div className="grid grid-cols-1 gap-10">
           {projects.map((project, index) => (
             <div
-              className="flex flex-col lg:flex-row gap-10 items-center border-2 border-primary p-10 rounded-xl shadow-md shadow-primary hover:-translate-y-3 duration-1000 cursor-pointer"
+              className="flex flex-col lg:flex-row gap-10 items-center border-2 border-primary p-10 rounded-xl shadow-md shadow-primary duration-1000 cursor-pointer"
               key={index}
             >
               <div className="flex-1">
