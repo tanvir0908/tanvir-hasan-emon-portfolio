@@ -27,7 +27,7 @@ export default function Education() {
   return (
     <div
       id="education"
-      className="w-full px-5 xl:px-0 bg-secondary py-20 min-h-screen text-gray"
+      className="w-full px-5 xl:px-0 bg-secondary py-20 text-gray"
     >
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-4xl lg:text-5xl mb-20 text-center font-semibold text-primary">
@@ -42,7 +42,7 @@ export default function Education() {
             {education.map((institute, index) => (
               <div
                 key={index}
-                className="shadow-xl border-2 hover:-translate-y-3 duration-1000 cursor-pointer border-primary space-y-5 cursor-pointe shadow-primary p-5 md:p-10  rounded-xl"
+                className="shadow-md border-2 hover:-translate-y-3 duration-1000 cursor-pointer border-primary space-y-5 cursor-pointe shadow-primary p-5 md:p-10  rounded-xl"
               >
                 <div className="flex items-center gap-5">
                   <IoSchool className="text-3xl md:text-4xl text-primary" />

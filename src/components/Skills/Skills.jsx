@@ -72,7 +72,7 @@ export default function Skills() {
           {skills1.map((skill, index) => (
             <div
               key={index}
-              className="flex hover:-translate-y-2 duration-1000 shadow-lg cursor-pointer border-2 border-primary shadow-primary gap-5 items-center p-5 md:p-3 rounded-xl"
+              className="flex hover:-translate-y-2 duration-1000 shadow-md cursor-pointer border-2 border-primary shadow-primary gap-5 items-center p-5 md:p-3 rounded-xl"
             >
               <img src={skill.image} className="w-10 md:w-16" alt="" />
               <p className="font-semibold text-base md:text-lg lg:text-xl">
