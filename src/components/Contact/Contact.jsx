@@ -46,7 +46,7 @@ export default function Contact() {
           <div className="flex-1">
             <form
               ref={form}
-              className="border-2 w-full border-primary p-10 rounded-xl shadow-md shadow-primary"
+              className="border-2 w-[23rem] md:w-[30rem] lg:w-full border-primary p-6 md:p-10 rounded-xl shadow-md shadow-primary"
               onSubmit={sendEmail}
             >
               <p className="font-medium">Name</p>

@@ -7,18 +7,6 @@ export default function Navbar() {
   const [toggle, setToggle] = useState(false);
   const [scroll, setScroll] = useState(false);
 
-  const transitionNavbar = () => {
-    if (window.scrollY > 200) {
-      setScroll(true);
-    } else {
-      setScroll(false);
-    }
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", transitionNavbar);
-    return () => window.removeEventListener("scroll", transitionNavbar);
-  }, []);
-
   const navLinks = [
     {
       link: "skills",
@@ -41,6 +29,18 @@ export default function Navbar() {
       name: "Contact",
     },
   ];
+
+  const transitionNavbar = () => {
+    if (window.scrollY > 200) {
+      setScroll(true);
+    } else {
+      setScroll(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", transitionNavbar);
+    return () => window.removeEventListener("scroll", transitionNavbar);
+  }, []);
 
   return (
     <div
