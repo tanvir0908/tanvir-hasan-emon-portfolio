@@ -43,7 +43,9 @@ export default function Navbar() {
   ];
 
   return (
-    <div className={`w-full py-5 fixed text-gray ${scroll && "bg-secondary"}`}>
+    <div
+      className={`w-full py-5 fixed text-gray ${scroll && "bg-secondary"} z-50`}
+    >
       <nav className="px-5 xl:px-0 max-w-7xl mx-auto flex items-center justify-between">
         <div>
           <Link

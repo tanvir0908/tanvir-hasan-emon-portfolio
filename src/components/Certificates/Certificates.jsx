@@ -40,7 +40,7 @@ export default function Certificates() {
           {certificates.map((certificate, index) => (
             <div
               key={index}
-              className="border-2 cursor-pointer flex gap-5 p-5 items-center rounded-xl border-primary shadow-md shadow-primary"
+              className="border-2 hover:-translate-y-2 duration-1000 cursor-pointer flex gap-5 p-5 items-center rounded-xl border-primary shadow-md shadow-primary"
             >
               <div className="flex-1">
                 <img
